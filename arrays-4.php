@@ -14,18 +14,18 @@
 
     <?php
 
-        $emptyArray1 = [];
-        $emptyArray2 = [];
+        $emptyArray1 = array();
+        $emptyArray2 = array();
 
         for($i=1; $i <= 500; $i++){
             if($i % 2 !== 0){
-                $emptyArray1[] = $i;  
+                array_push($emptyArray1, $i);  
             }else{
-                $emptyArray2[] = $i; 
+                array_push($emptyArray2, $i);  ; 
             }
         }
     ?>
-    <div class="d-flex text-danger">
+    <div class=" text-danger">
         კენტი  რიცხვები --
         <?php
             foreach($emptyArray1 as $array1){
@@ -36,7 +36,7 @@
         ?>
     </div>
     
-       <div class="d-flex text-success">
+       <div class=" text-success">
         ლუწი რიცხვები -- 
         <?php
              foreach($emptyArray2 as $array2){
@@ -44,7 +44,7 @@
             }
         ?>
     </div>
-    
+
 </div>
 </body>
 </html>
