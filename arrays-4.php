@@ -21,7 +21,7 @@
             if($i % 2 !== 0){
                 array_push($emptyArray1, $i);  
             }else{
-                array_push($emptyArray2, $i);  ; 
+                array_push($emptyArray2, $i);  
             }
         }
     ?>
